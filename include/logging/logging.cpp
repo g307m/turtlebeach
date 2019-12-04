@@ -23,5 +23,13 @@ namespace logging
     {
         cout<<"["<<prefix()<<"]:[INFO,"<<messenger<<"]:\t"<<message<<endl;
     }
+    void warn(string messenger,string message)
+    {
+        cout<<"["<<prefix()<<"]:[WARN,"<<messenger<<"]:\t"<<message<<endl;
+    }
+    void fatal(string messenger,string message)
+    {
+        cout<<"["<<prefix()<<"]:[FATAL,"<<messenger<<"]:\t"<<message<<endl;
+    }
     
 }
